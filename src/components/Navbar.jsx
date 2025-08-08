@@ -7,8 +7,8 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", to: "/" },
-    { name: "Corporate", to: "/corporate" },
-    { name: "Student", to: "/student" },
+    { name: "Contact", to: "/contact" },
+    { name: "Certificate", to: "/certificate" },
   ];
 
   useEffect(() => {

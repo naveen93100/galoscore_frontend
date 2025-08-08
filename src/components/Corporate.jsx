@@ -16,27 +16,6 @@ const Corporate = () => {
         </p>
       </section>
 
-      {/* Why Use GALO */}
-      {/* <section>
-        <h2 className="text-3xl font-bold text-center mb-12">Why Use GALO SCORE for Recruitment?</h2>
-        <div className="grid md:grid-cols-3 gap-10">
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition group hover:bg-yellow-500">
-            <img src="/hiring.png" alt="Smart Hiring" className="mx-auto h-32 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Objective Evaluation</h3>
-            <p className="text-gray-600 text-sm group-hover:text-whitex">Assess candidates based on logic, reasoning, and analytics—not just resumes.</p>
-          </div>
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition group hover:bg-yellow-500">
-            <img src="/team.png" alt="Team Fit" className="mx-auto h-32 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Team Fit Insights</h3>
-            <p className="text-gray-600 text-sm group-hover:text-whitex">See how a candidate’s profile aligns with your team culture and roles.</p>
-          </div>
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition group hover:bg-yellow-500">
-            <img src="/pipeline.png" alt="Hiring Pipeline" className="mx-auto h-32 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Streamlined Hiring</h3>
-            <p className="text-gray-600 text-sm group-hover:text-whitex">Easily send tests, track applicants, and view ranked results in one place.</p>
-          </div>
-        </div>
-      </section> */}
 
       <div className="grid gap-8 sm:grid-cols-3">
         {/* Card 1 */}

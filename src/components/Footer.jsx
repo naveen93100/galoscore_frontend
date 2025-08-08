@@ -13,10 +13,8 @@ const Footer = () => {
         {/* Right: Links and Copyright */}
         <div className="text-sm text-gray-300 text-right space-y-2">
           <div className="space-x-4">
-            <a href="#" className="hover:underline">About</a>
             <a href="#" className="hover:underline">Contact</a>
-            <a href="#" className="hover:underline">Privacy</a>
-            <a href="#" className="hover:underline">Terms</a>
+            <a href="#" className="hover:underline">Certificate</a>
           </div>
           <p className="text-xs text-gray-500">© 2025 GaloScore. All rights reserved.</p>
         </div>

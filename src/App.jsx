@@ -14,6 +14,8 @@ import TestLayout from "./pages/Dashboard/Student/TestLayout"
 import Cse from "./pages/Dashboard/Student/Cse"
 import Ece from "./pages/Dashboard/Student/Ece"
 import Me from "./pages/Dashboard/Student/Me"
+import Contact from "./pages/Contact"
+import Certificate from "./pages/Certificate"
 
 
 const App = () => {
@@ -29,7 +31,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/corporate" element={<Corporate />} />
+        <Route path="/certificate" element={<Certificate/>}/>
+        {/* <Route path="/corporate" element={<Corporate />} /> */}
         {token ?
           <Route path="/student" element={<StudentDashboard />} >
             <Route index element={<StudentHome />} />
@@ -41,7 +44,7 @@ const App = () => {
             </Route>
           </Route>
           :
-          <Route path="/student" element={<Student />} />
+          <Route path="/contact" element={<Contact/>}/>
         }
       </Routes>
       {!token &&

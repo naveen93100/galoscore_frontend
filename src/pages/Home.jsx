@@ -9,19 +9,21 @@ const Home = () => {
   return (
     <>
 
-      <div className="min-h-screen flex flex-col justify-center items-center  px-4 py-12 sm:pt-30 pt-40 bg-gray-100">
+      <div className="min-h-screen flex flex-col justify-center items-center px-4 py-12 sm:pt-30 pt-40 bg-gray-100">
         <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
           {/* Left Content */}
           <div className="space-y-6">
             <h1 className="text-xl sm:text-2xl font-bold text-gray-800">
-              GaloScore: Effortlessly Connecting India’s Emerging Engineering Talent with Employers —
-              Verified, Accessible, and Completely Free
+              Galo Score : A platform that lets you prove your skills even as a fresher from a
+              t
+              ier 3 or tier 4 college.
             </h1>
             <p className="text-gray-700 text-lg">
-              A dual-section employability test designed to spotlight skilled students from Tier 3 & 4
-              colleges—trusted by recruiters and proven to facilitate successful hires.
-              The test is entirely free for students and currently available at no cost to employers.
+              Galoscore is a national-level aptitude testing platform built for fresh graduates
+              especially capable B. Tech, B.Com, or B.Sc  students from Tier 3 and Tier 4 colleges
+              who struggle to get noticed by recruiters due to of experience or brand-name
+              institutions.
             </p>
             <div className="space-x-4">
               <Link
@@ -55,31 +57,6 @@ const Home = () => {
       <div className="min-h-screen bg-gray-300 px-6 py-16">
         <div className="max-w-6xl mx-auto flex flex-col gap-16 backdrop-blur-sm bg-white/50 rounded-2xl p-2">
 
-
-          {/* Story Section */}
-          {/* <div className=" flex flex-col-reverse md:flex-row justify-between items-center gap-10 w-full">
-
-            <div className="w-full md:w-1/2">
-              <img
-                src="/about.png"
-                alt="Students studying"
-                className="w-full "
-              />
-            </div>
-
-            <div className="w-full md:w-1/2">
-              <h2 className="text-4xl font-bold text-yellow-500 mb-0">'One Test. Real Opportunity'</h2>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">What is GaloScore?</h3>
-              <p className="text-gray-700 leading-relaxed font-medium">
-                GaloScore is a complimentary dual-section recruitment assessment that connects capable
-                engineering students with employers who prioritize verified skills and job readiness.
-              </p>
-              <p className="mt-4 text-gray-700 font-medium">
-                By providing a neutral, merit-driven hiring metric, GaloScore empowers capable students who may be overlooked due to college brand bias.
-              </p>
-            </div>
-          </div> */}
-
           <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10 w-full">
             {/* Image Section */}
             <div className="w-full md:w-1/2">
@@ -92,10 +69,10 @@ const Home = () => {
 
             {/* Text Content Section */}
             <div className="w-full md:w-1/2">
-              <h2 className="text-4xl font-bold text-yellow-500 mb-4">One Test. Real Opportunity.</h2>
+              <h2 className="text-4xl font-bold text-yellow-500 mb-4">Your test. Your opportunity.</h2>
               <p className="text-gray-700 leading-relaxed font-medium">
-                GaloScore is a complimentary dual-section recruitment assessment that connects capable
-                engineering students with employers who prioritize verified skills and job readiness.
+                Every year, lakhs of talented students graduate from colleges across India but
+                many struggle to land interviews or get noticed by recruiters.
               </p>
 
               <div className="mt-4 text-gray-700 font-medium space-y-2">
@@ -107,9 +84,8 @@ const Home = () => {
               </div>
 
               <p className="mt-4 text-gray-700 font-medium">
-                Thousands of students have utilized GaloScore to validate their capabilities and advance
-                their careers—all at no cost to them. Employers currently benefit from free access to identify
-                and engage top talent efficiently.
+                By focusing on aptitude, logical reasoning, communication, and problem-solving,
+                we give graduates a fair and equal chance to showcase their employability.
               </p>
             </div>
           </div>
@@ -120,9 +96,12 @@ const Home = () => {
           <div className="bg-white p-8 rounded-xl shadow-md">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Why GaloScore Matters</h3>
             <p className="text-gray-700 mb-4">
-              <strong>Trusted by Recruiters Nationwide</strong><br />
-              GaloScore is becoming the preferred platform for organizations committed to merit-based
-              hiring, delivering verified talent at no cost to employers or students.
+
+              We built Galoscore to bridge the gap between skilled freshers especially a B.Tech,
+              B.Com, or B.Sc graduate  from Tier 3 and Tier 4 colleges and the employers who
+              are looking for real potential, not just big college names.
+              We help you prove your skills, earn a credible score, and add value to your
+              resume.
             </p>
             <div className="text-gray-700 mb-4">
               <strong>More Than a Test — A Mark of Readiness</strong><br />
@@ -145,15 +124,18 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div className="bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
               <h4 className="text-xl font-bold mb-2">Our Vision</h4>
-              <p>To become India’s benchmark for identifying real engineering talent — beyond college names.</p>
+              <p>A world where skills are valued over labels, and every capable graduate has
+                access to meaningful career opportunities </p>
             </div>
             <div className="bg-black/90 text-white p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
               <h4 className="text-xl font-bold mb-2">Our Mission</h4>
-              <p>To level the playing field through accessible, skill-based hiring tests — free for students.</p>
+              <p>At Galoscore, we believe everyone deserves the opportunity to showcase their
+                true potential regardless of their background.</p>
             </div>
             <div className="bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
               <h4 className="text-xl font-bold mb-2">Our Values</h4>
-              <p>Merit. Credibility. Inclusion. Transparency.</p>
+              <p>We help fresher’s show their true potential and get noticed by employers through
+                a simple, trusted test score </p>
             </div>
           </div>
 
@@ -186,28 +168,20 @@ const Home = () => {
           {/* Challenges vs Benefits */}
           <div className="bg-white p-8 rounded-xl shadow-md">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Why GALO Score Makes You Stand Out</h3>
-            <div className="grid md:grid-cols-2 gap-8 text-gray-700">
-              <div>
-                <h4 className="font-semibold mb-2">Your Challenge as a Fresher</h4>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Hard to get noticed by recruiters</li>
-                  <li>Skill gap between college and industry</li>
-                  <li>Resume looks like everyone else’s</li>
-                  <li>No clarity on strengths or weaknesses</li>
-                  <li>Difficult to find relevant job openings</li>
-                  <li>Lack of trust from companies</li>
-                </ul>
+            <div className="grid md:grid-cols-3 gap-8 text-gray-700">
+              <div className="bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
+                <h4 className="text-xl font-bold mb-2">Industry recognition</h4>
+                <p>Our certificates are acknowledged by leading companies actively hiring fresh
+                  talent. </p>
               </div>
-              <div>
-                <h4 className="font-semibold mb-2">How GALO Score Helps</h4>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Recognized by top companies</li>
-                  <li>Tests on current job-relevant skills</li>
-                  <li>Verified badge and digital certificate</li>
-                  <li>Instant section-wise feedback</li>
-                  <li>Smart job/internship alerts</li>
-                  <li>Instant online verification</li>
-                </ul>
+              <div className="bg-black text-white p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
+                <h4 className="text-xl font-bold mb-2">Boost Your Career</h4>
+                <p>Add weight to your resume, improve interview chances, and stand out even
+                  without work experience.  </p>
+              </div>
+               <div className="bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
+                <h4 className="text-xl font-bold mb-2">Skill validation</h4>
+                <p>showcase what you truly know with Verified assessments from industry experts. </p>
               </div>
             </div>
           </div>
