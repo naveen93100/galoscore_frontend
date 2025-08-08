@@ -1,3 +1,5 @@
+
+
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -16,14 +18,12 @@ const Home = () => {
           <div className="space-y-6">
             <h1 className="text-xl sm:text-2xl font-bold text-gray-800">
               Galo Score : A platform that lets you prove your skills even as a fresher from a
-              t
-              ier 3 or tier 4 college.
+              tier 3 or tier 4 college.
             </h1>
             <p className="text-gray-700 text-lg">
               Galoscore is a national-level aptitude testing platform built for fresh graduates
               especially capable B. Tech, B.Com, or B.Sc  students from Tier 3 and Tier 4 colleges
-              who struggle to get noticed by recruiters due to of experience or brand-name
-              institutions.
+              who struggle to get noticed by recruiters due  to lack of experience.
             </p>
             <div className="space-x-4">
               <Link
@@ -74,6 +74,8 @@ const Home = () => {
                 Every year, lakhs of talented students graduate from colleges across India but
                 many struggle to land interviews or get noticed by recruiters.
               </p>
+              
+              <p className="text-gray-700 leading-relaxed font-medium mt-1">We started Galoscore to solve that problem. </p>
 
               <div className="mt-4 text-gray-700 font-medium space-y-2">
                 <p>It includes:</p>
@@ -158,30 +160,39 @@ const Home = () => {
             </div>
 
             <div className="w-full md:w-1/2">
-              <h2 className="text-4xl font-bold text-yellow-500 mb-0">GALO Score: Your Gateway to Industry-Ready Skills</h2>
+              <h2 className="text-4xl font-bold text-yellow-500 mb-0">Unlock Your Career Potential with GALO Score</h2>
               <p className="mt-4 text-gray-700 leading-relaxed font-medium">
-                GALO Score is an industry-endorsed, next-gen employability test designed to bridge the gap between what colleges teach and what companies demand. It empowers BTech freshers and engineering students to demonstrate their technical, practical, and soft skills with a shareable, verified scorecard.
+                GALO Score isn’t just another test it’s your proof of real-world ability. Show recruiters you’ve got the technical skills to hit the ground running, even as a fresh graduate.
+                Get your verified score, share it on your resume and LinkedIn, and step confidently into the jobs you’ve always wanted.
               </p>
             </div>
           </div>
 
           {/* Challenges vs Benefits */}
           <div className="bg-white p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Why GALO Score Makes You Stand Out</h3>
-            <div className="grid md:grid-cols-3 gap-8 text-gray-700">
-              <div className="bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
-                <h4 className="text-xl font-bold mb-2">Industry recognition</h4>
-                <p>Our certificates are acknowledged by leading companies actively hiring fresh
-                  talent. </p>
+            {/* <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Why GALO Score Makes You Stand Out</h3> */}
+            <div className="grid md:grid-cols-2 gap-8 text-gray-700">
+              <div>
+                <h4 className="font-semibold mb-2">Your Challenge as a Fresher</h4>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>Hard to get noticed by recruiters</li>
+                  <li>Skill gap between college and industry</li>
+                  <li>Resume looks like everyone else’s</li>
+                  <li>No clarity on strengths or weaknesses</li>
+                  <li>Difficult to find relevant job openings</li>
+                  <li>Lack of trust from companies</li>
+                </ul>
               </div>
-              <div className="bg-black text-white p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
-                <h4 className="text-xl font-bold mb-2">Boost Your Career</h4>
-                <p>Add weight to your resume, improve interview chances, and stand out even
-                  without work experience.  </p>
-              </div>
-               <div className="bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
-                <h4 className="text-xl font-bold mb-2">Skill validation</h4>
-                <p>showcase what you truly know with Verified assessments from industry experts. </p>
+              <div>
+                <h4 className="font-semibold mb-2">How GALO Score Helps</h4>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>Recognized by top companies</li>
+                  <li>Tests on current job-relevant skills</li>
+                  <li>Verified badge and digital certificate</li>
+                  <li>Instant section-wise feedback</li>
+                  <li>Smart job/internship alerts</li>
+                  <li>Instant online verification</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -192,3 +203,4 @@ const Home = () => {
 };
 
 export default Home;
+

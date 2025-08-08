@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaAward, FaExternalLinkAlt, FaShieldAlt, FaChartLine, FaUserCheck, FaGlobe } from "react-icons/fa";
 
 const Certificates = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <div className="min-h-screen flex flex-col justify-center items-center px-4 py-12 sm:pt-30 pt-40 bg-gray-100">
             <div className="bg-white p-10 rounded-2xl">
@@ -14,7 +17,8 @@ const Certificates = () => {
                         Earn <span className="text-yellow-500">Industry-Recognized</span> Certificates
                     </h1>
                     <p className="mt-4 text-gray-700">
-                        Validate your skills with certificates from leading industry partners. Boost your career prospects and stand out to employers.
+                        Showcase your skills with certifications trusted by top employers Boost your resume, prove your potential, and get closer to your dream job.
+
                     </p>
 
                     {/* Buttons */}
@@ -57,28 +61,28 @@ const Certificates = () => {
                         <FaShieldAlt className="text-yellow-500 text-3xl mx-auto mb-4" />
                         <h3 className="font-semibold mb-2">Industry Recognition</h3>
                         <p className="text-sm text-gray-400">
-                            Our certificates are recognized by top companies and hiring managers worldwide.
+                            Our certificates are acknowledged by leading companies actively hiring fresh talent.
                         </p>
                     </div>
                     <div className="bg-yellow-500 text-white rounded-lg shadow-md p-6 text-center transition-all ease-in-out hover:scale-105">
                         <FaChartLine className="text-black text-3xl mx-auto mb-4" />
                         <h3 className="font-semibold mb-2 text-black">Career Advancement</h3>
                         <p className="text-sm text-gray-800">
-                            Boost your resume and increase your chances of landing your dream job.
+                            Boost your resume, improve interview chances, and increase your chances of landing your dream job experience.
                         </p>
                     </div>
                     <div className="bg-black text-white rounded-lg shadow-md p-6 text-center transition-all ease-in-out hover:scale-105">
                         <FaUserCheck className="text-yellow-500 text-3xl mx-auto mb-4" />
                         <h3 className="font-semibold mb-2">Skill Validation</h3>
                         <p className="text-sm text-gray-400">
-                            Demonstrate your expertise with verified assessments from industry experts.
+                           showcase what you truly know with Verified assessments from industry experts.
                         </p>
                     </div>
                     <div className="bg-yellow-500 text-white rounded-lg shadow-md p-6 text-center transition-all ease-in-out hover:scale-105">
                         <FaGlobe className="text-black text-3xl mx-auto mb-4" />
                         <h3 className="font-semibold mb-2 text-black">Global Standards</h3>
                         <p className="text-sm text-gray-800">
-                            Certificates based on international standards and best practices.
+                           Certificate based on international standards to ensure global credibility.
                         </p>
                     </div>
                 </div>

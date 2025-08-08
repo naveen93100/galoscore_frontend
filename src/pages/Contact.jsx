@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const Contact = () => {
+    useEffect(()=>{
+          window.scrollTo(0,0);
+        },[])
     return (
         <div className="min-h-screen flex flex-col justify-center items-center px-4 py-12 sm:pt-30 pt-40 bg-gray-100">
             {/* Heading */}
