@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Define a custom clip-path for paper-tear effect */
+.clip-paper {
+  clip-path: polygon(
+    0 0, 
+    100% 0, 
+    100% 90%, 
+    90% 100%, 
+    10% 90%, 
+    0 100%
+  );
+  
+}
