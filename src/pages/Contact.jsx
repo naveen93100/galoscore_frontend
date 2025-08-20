@@ -78,10 +78,10 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h4 className="text-white font-semibold">Email Us</h4>
-                                <p className="text-gray-300">support@testportal.com</p>
+                                <p className="text-gray-300">test@galo.co.in</p>
                             </div>
                         </div>
-                        <div className="bg-black p-6 rounded-lg flex items-center gap-4 shadow-lg">
+                        {/* <div className="bg-black p-6 rounded-lg flex items-center gap-4 shadow-lg">
                             <div className="bg-yellow-500 p-3 rounded-md">
                                 <FaPhoneAlt className="text-black text-lg" />
                             </div>
@@ -89,7 +89,7 @@ const Contact = () => {
                                 <h4 className="text-white font-semibold">Call Us</h4>
                                 <p className="text-gray-300">+1 (555) 123-4567</p>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="bg-black p-6 rounded-lg flex items-center gap-4 shadow-lg">
                             <div className="bg-yellow-500 p-3 rounded-md">
                                 <FaMapMarkerAlt className="text-black text-lg" />
@@ -97,7 +97,7 @@ const Contact = () => {
                             <div>
                                 <h4 className="text-white font-semibold">Visit Us</h4>
                                 <p className="text-gray-300">
-                                    123 Tech Street, Silicon Valley, CA 94105
+                                    D-120-121, Pocket D, Okhla Phase I, Okhla Industrial Estate, New Delhi, Delhi 110020
                                 </p>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h4 className="text-white font-semibold">Support Hours</h4>
-                                <p className="text-gray-300">Mon - Fri, 9am - 6pm</p>
+                                <p className="text-gray-300">Mon - Sat, 10am - 6pm</p>
                             </div>
                         </div>
                     </div>

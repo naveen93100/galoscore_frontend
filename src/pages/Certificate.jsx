@@ -18,7 +18,6 @@ const Certificates = () => {
                     </h1>
                     <p className="mt-4 text-gray-700">
                         Showcase your skills with certifications trusted by top employers Boost your resume, prove your potential, and get closer to your dream job.
-
                     </p>
 
                     {/* Buttons */}
@@ -33,7 +32,7 @@ const Certificates = () => {
                 </div>
 
                 {/* Stats */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center mt-12">
+                {/* <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center mt-12">
                     <div>
                         <h2 className="text-2xl font-bold text-yellow-500">25K+</h2>
                         <p className="text-gray-700">Certificates Issued</p>
@@ -50,7 +49,7 @@ const Certificates = () => {
                         <h2 className="text-2xl font-bold text-yellow-500">95%</h2>
                         <p className="text-gray-700">Employer Recognition</p>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             {/* Why Certificates Matter */}
