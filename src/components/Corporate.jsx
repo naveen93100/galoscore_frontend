@@ -5,21 +5,21 @@ const Corporate = () => {
       window.scrollTo(0,0);
     },[])
   return (
-    <div className="bg-gray-100 text-gray-800 pt-32 px-6 pb-16 space-y-20">
+    <div className="bg-gray-100 text-gray-800 pt-32 px-6 pb-16 space-y-20 font-['Roboto_Condensed']">
 
       {/* Hero Section */}
       <section className="text-center max-w-5xl mx-auto">
         <h1 className="text-3xl sm:text-5xl font-extrabold mb-4 text-yellow-500">Access Pre-Assessed Talent Without Cost </h1>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
           Streamline your recruitment with complimentary access to a vetted pool of candidates who
-          have demonstrated their skills through GaloScore.
+          have demonstrated their skills through Galo Score.
         </p>
       </section>
 
 
       <div className="grid gap-8 sm:grid-cols-3">
         {/* Card 1 */}
-        <div className="bg-white shadow-md rounded-xl p-6 text-left flex flex-col items-center justify-center border-l-4 border-yellow-500">
+        <div className="bg-white shadow-md rounded-xl p-6 text-left flex flex-col items-center justify-center border-l-4 border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
           <img
             src="/verified.png" // Replace with relevant unDraw-style icon or hosted SVG
             alt="Verified Scores"
@@ -32,7 +32,7 @@ const Corporate = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white shadow-md rounded-xl p-6 text-left flex flex-col items-center justify-center border-l-4 border-yellow-500">
+        <div className="bg-white shadow-md rounded-xl p-6 text-left flex flex-col items-center justify-center border-l-4 border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
           <img
             src="/filter.png" // Replace with relevant unDraw-style icon or hosted SVG
             alt="Filter Candidates"
@@ -45,7 +45,7 @@ const Corporate = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-white shadow-md rounded-xl p-6 text-left flex flex-col items-center justify-center border-l-4 border-yellow-500">
+        <div className="bg-white shadow-md rounded-xl p-6 text-left flex flex-col items-center justify-center border-l-4 border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
           <img
             src="/hiring.png" // Replace with relevant unDraw-style icon or hosted SVG
             alt="Faster Hiring"
@@ -70,7 +70,7 @@ const Corporate = () => {
           </div>
           <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition text-center">
             <h4 className="text-xl font-semibold mb-2">2. Verify Candidate Scores </h4>
-            <p className="text-gray-600">Authenticate GaloScore results submitted with candidates’ CVs or view them directly
+            <p className="text-gray-600">Authenticate Galo Score results submitted with candidates’ CVs or view them directly
               on the platform. </p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition text-center">

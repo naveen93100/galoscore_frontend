@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white px-6 py-10">
+    <footer className="bg-black text-white px-6 py-10 font-['Roboto_Condensed']">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left: Brand and Description */}
         <div>
@@ -36,8 +36,10 @@ const Footer = () => {
         <div className="text-sm text-gray-300 md:text-right">
           <h3 className="text-lg font-semibold text-yellow-400 mb-3">Quick Links</h3>
           <div className="flex md:flex-col gap-3  md:items-end">
-            <Link to="/certificate" className="hover:underline">Contact</Link>
-            <Link to="/contact" className="hover:underline">Certificate</Link>
+            {/* <Link to="/" className="hover:underline">Certificate</Link> */}
+            <Link to="/student" className="hover:underline">Students</Link>
+            <Link to="/corporate" className="hover:underline">Corporate</Link>
+            <Link to="/contact" className="hover:underline">Contact</Link>
           </div>
         </div>
       </div>

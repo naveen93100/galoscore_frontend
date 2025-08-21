@@ -2,8 +2,16 @@
 
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FaLightbulb, FaChartPie, FaHandPointer, FaSearch, FaBriefcase } from "react-icons/fa";
 
 const Home = () => {
+   const steps = [
+    { icon: <FaLightbulb className="text-yellow-500" />, label: "Take GALO Test" },
+    { icon: <FaChartPie className="text-yellow-500" />, label: "Get a Score" },
+    { icon: <FaHandPointer className="text-yellow-500" />, label: "Start Applying" },
+    { icon: <FaSearch className="text-yellow-500" />, label: "Get Shortlisted" },
+    { icon: <FaBriefcase className="text-yellow-500" />, label: "Get Hired" },
+  ];  
   useEffect(() => {
     window.scrollTo(0, 0);
 
@@ -11,15 +19,15 @@ const Home = () => {
   return (
     <>
 
-      <div className="min-h-screen flex flex-col justify-center items-center px-4 py-12 sm:pt-30 pt-40 bg-gray-100">
+      <div className=" min-h-screen flex flex-col justify-center items-center px-4 py-12 sm:pt-30 pt-40 bg-gray-100">
         <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
           {/* Left Content */}
           <div className="space-y-6">
-            <h1 className="text-xl sm:text-2xl font-bold text-gray-800">
+            <h1 className="text-xl sm:text-2xl font-bold text-gray-800 font-['Roboto_Condensed']">
               Galo Score : A platform that lets you prove your skills even as a fresher from a lesser-known college
             </h1>
-            <p className="text-gray-700 text-lg font-medium">
+            <p className="text-gray-700 text-lg font-medium font-['Roboto_Condensed']">
               You’ve worked hard, learned the skills, and dream of building a great career, but without a famous college name or experience on your resume, it’s easy to feel invisible. Galo Score gives you a fair chance to prove your abilities, get noticed by employers, and open doors to better career opportunities.
             </p>
             <div className="flex gap-2 flex-wrap">
@@ -50,7 +58,7 @@ const Home = () => {
       </div>
 
       {/* about */}
-      <div className="min-h-screen bg-gray-300 px-6 py-16">
+      <div className="min-h-screen bg-gray-300 px-6 py-16 font-['Roboto_Condensed'] ">
         <div className="max-w-6xl mx-auto flex flex-col gap-16 backdrop-blur-sm bg-white/50 rounded-2xl p-2">
 
           <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10 w-full">
@@ -66,7 +74,7 @@ const Home = () => {
             {/* Text Content Section */}
             <div className="w-full md:w-1/2">
               <h2 className="text-4xl font-bold text-yellow-500 mb-4">Your test. Your opportunity.</h2>
-              <p className="text-gray-700 leading-relaxed font-medium">
+              <p className="text-gray-700 leading-relaxed font-medium  ">
                 Every year, thousands of talented students graduate from colleges across India, but many struggle to secure interviews or gain the attention of recruiters.
               </p>
 
@@ -95,7 +103,7 @@ const Home = () => {
 
               We built Galo Score to bridge the gap between skilled freshers, especially B.Tech, B.Com, or B.Sc graduates from Tier 2 and Tier 3 colleges and the employers who are looking for real potential, not just big college names. We help you prove your skills, earn a credible score, and add value to your resume.
             </p>
-            <div className="text-gray-700 mb-4">
+            <div className="text-gray-700 mb-4 ">
               <strong>More Than a Test — A Mark of Readiness</strong><br />
               Galo Score is more than an exam; it is a professional credential.
               <ul className="list-disc pl-5 mt-2 space-y-2">
@@ -111,7 +119,7 @@ const Home = () => {
 
 
           {/* Vision/Mission/Values */}
-          <div className="grid md:grid-cols-3 gap-6 text-center">
+          <div className="grid md:grid-cols-3 gap-6 text-center ">
             <div className="bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
               <h4 className="text-xl font-bold mb-2">Our Vision</h4>
               <p>A world where skills are valued over labels, and every capable graduate has
@@ -133,7 +141,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="min-h-screen bg-gray-300 px-6 py-16">
+      <div className="min-h-screen bg-gray-300 px-6 py-16 font-['Roboto_Condensed']">
         <div className="max-w-6xl mx-auto flex flex-col gap-16 backdrop-blur-sm bg-white/50 rounded-2xl p-4">
 
           {/* Hero Section */}
@@ -184,6 +192,34 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <section className="w-full bg-gray-300 py-10 px-6 md:px-12 font-['Roboto_Condensed']">
+      <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-2xl p-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-4">
+          The Galo Score Journey
+        </h2>
+        <p className="text-center text-gray-700 font-medium mb-8">
+          Where your skills meet the right opportunities
+        </p>
+
+        {/* Steps */}
+        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-8 bg-gray-300 rounded-2xl p-4">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center w-24 md:w-28"
+            >
+              <div className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center bg-white border border-black rounded-full shadow-md mb-3 text-2xl">
+                {step.icon}
+              </div>
+              <span className="text-sm md:text-base text-gray-800 font-medium">
+                {step.label}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
     </>
   );
 };

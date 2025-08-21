@@ -32,7 +32,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/certificate" element={<Certificate/>}/>
-        {/* <Route path="/corporate" element={<Corporate />} /> */}
+        <Route path="/corporate" element={<Corporate />} />
         {token ?
           <Route path="/student" element={<StudentDashboard />} >
             <Route index element={<StudentHome />} />
@@ -44,7 +44,10 @@ const App = () => {
             </Route>
           </Route>
           :
+          <>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="/student" element={<Student/>}/>
+          </>
         }
       </Routes>
       {!token &&
