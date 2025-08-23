@@ -5,7 +5,7 @@ const Corporate = () => {
       window.scrollTo(0,0);
     },[])
   return (
-    <div className="bg-gray-100 text-gray-800 pt-32 px-6 pb-16 space-y-20 font-['Roboto_Condensed']">
+    <div className="bg-gray-100 text-gray-800 pt-32 px-6 pb-16 space-y-20">
 
       {/* Hero Section */}
       <section className="text-center max-w-5xl mx-auto">
@@ -27,7 +27,7 @@ const Corporate = () => {
           />
           <h3 className="text-lg font-semibold text-gray-800">Verified Scores & Resumes</h3>
           <p className="text-gray-600 text-sm mt-1">
-            Instantly view verified scores and detailed resumes to evaluate candidates confidently.
+            Through the standardized Galo Score, recruiters can efficiently compare aptitude levels across a wide pool of candidates, enabling faster and more objective shortlisting of top talent.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ const Corporate = () => {
           />
           <h3 className="text-lg font-semibold text-gray-800">Smart Filtering Options</h3>
           <p className="text-gray-600 text-sm mt-1">
-            Apply filters by domain, skill level, or overall score to shortlist the right talent faster.
+           When someone scores well in Galo Score, their profile gets noticed—removing the need to rely on long, unfair or time-consuming selection processes.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ const Corporate = () => {
           />
           <h3 className="text-lg font-semibold text-gray-800">Faster, Higher-Quality Hiring</h3>
           <p className="text-gray-600 text-sm mt-1">
-            Reduce hiring time and improve candidate quality with streamlined screening insights.
+           Galo Score is built to be fair, fast, and unbiased, so hiring is based purely on talent and ability.
           </p>
         </div>
       </div>

@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 import { FaLightbulb, FaChartPie, FaHandPointer, FaSearch, FaBriefcase } from "react-icons/fa";
 
 const Home = () => {
-   const steps = [
+  const steps = [
     { icon: <FaLightbulb className="text-yellow-500" />, label: "Take GALO Test" },
     { icon: <FaChartPie className="text-yellow-500" />, label: "Get a Score" },
     { icon: <FaHandPointer className="text-yellow-500" />, label: "Start Applying" },
     { icon: <FaSearch className="text-yellow-500" />, label: "Get Shortlisted" },
     { icon: <FaBriefcase className="text-yellow-500" />, label: "Get Hired" },
-  ];  
+  ];
   useEffect(() => {
     window.scrollTo(0, 0);
 
@@ -23,11 +23,18 @@ const Home = () => {
         <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
           {/* Left Content */}
-          <div className="space-y-6">
-            <h1 className="text-xl sm:text-2xl font-bold text-gray-800 font-['Roboto_Condensed']">
-              Galo Score : A platform that lets you prove your skills even as a fresher from a lesser-known college
+
+          <div className="space-y-6 lg:space-y-9 ">
+            <h1 className="capitalize text-3xl md:text-4xl lg:text-6xl font-bold flex flex-col ">
+              Unlock your {''}
+               <span className="text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text">
+                dream career
+              </span>
             </h1>
-            <p className="text-gray-700 text-lg font-medium font-['Roboto_Condensed']">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-800 ">
+              Galo Score : A platform that lets you prove your skills even as a fresher from a lesser-known college
+            </h2>
+            <p className="text-gray-700 text-lg font-medium ">
               You’ve worked hard, learned the skills, and dream of building a great career, but without a famous college name or experience on your resume, it’s easy to feel invisible. Galo Score gives you a fair chance to prove your abilities, get noticed by employers, and open doors to better career opportunities.
             </p>
             <div className="flex gap-2 flex-wrap">
@@ -58,7 +65,7 @@ const Home = () => {
       </div>
 
       {/* about */}
-      <div className="min-h-screen bg-gray-300 px-6 py-16 font-['Roboto_Condensed'] ">
+      <div className="min-h-screen bg-gray-300 px-6 py-16  ">
         <div className="max-w-6xl mx-auto flex flex-col gap-16 backdrop-blur-sm bg-white/50 rounded-2xl p-2">
 
           <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10 w-full">
@@ -141,7 +148,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="min-h-screen bg-gray-300 px-6 py-16 font-['Roboto_Condensed']">
+      <div className="min-h-screen bg-gray-300 px-6 py-16 ">
         <div className="max-w-6xl mx-auto flex flex-col gap-16 backdrop-blur-sm bg-white/50 rounded-2xl p-4">
 
           {/* Hero Section */}
@@ -193,33 +200,34 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="w-full bg-gray-300 py-10 px-6 md:px-12 font-['Roboto_Condensed']">
-      <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-2xl p-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-4">
-          The Galo Score Journey
-        </h2>
-        <p className="text-center text-gray-700 font-medium mb-8">
-          Where your skills meet the right opportunities
-        </p>
+      {/* galo journey  */}
+      <section className="w-full bg-gray-300 py-10 px-6 md:px-12 ">
+        <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-2xl p-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-4">
+            The Galo Score Journey
+          </h2>
+          <p className="text-center text-gray-700 font-medium mb-8">
+            Where your skills meet the right opportunities
+          </p>
 
-        {/* Steps */}
-        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-8 bg-gray-300 rounded-2xl p-4">
-          {steps.map((step, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center text-center w-24 md:w-28"
-            >
-              <div className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center bg-white border border-black rounded-full shadow-md mb-3 text-2xl">
-                {step.icon}
+          {/* Steps */}
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-8 bg-gray-300 rounded-2xl p-4">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center text-center w-24 md:w-28"
+              >
+                <div className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center bg-white border border-black rounded-full shadow-md mb-3 text-2xl">
+                  {step.icon}
+                </div>
+                <span className="text-sm md:text-base text-gray-800 font-medium">
+                  {step.label}
+                </span>
               </div>
-              <span className="text-sm md:text-base text-gray-800 font-medium">
-                {step.label}
-              </span>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 };

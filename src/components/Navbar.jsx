@@ -7,8 +7,8 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", to: "/" },
-    { name: "Students", to: "/student" },
-    { name: "Corporate", to: "/corporate" },
+    { name: "Candidate ", to: "/candidate " },
+    { name: "Employer", to: "/employer " },
     { name: "Contact", to: "/contact" },
     // { name: "Certificate", to: "/certificate" },
   ];
@@ -26,15 +26,16 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="w-full fixed top-0 p-3 z-50 font-['Roboto_Condensed']">
+    <nav className="w-full fixed top-0 p-3 z-50">
       <div className="max-w-7xl shadow-lg mx-auto px-4 sm:px-6 py-3 flex justify-between items-center rounded-full bg-black backdrop-blur-2xl">
         {/* Left side: Logo + NavLinks */}
         <div className="flex items-center space-x-8 bg-white/20 rounded-full py-1 px-4">
-          <Link to="/" className="flex items-center space-x-2 text-3xl font-bold text-yellow-500">
-            <span>GALO SCORE</span>
+          <Link to="/" className="flex items-center space-x-2">
+            <img src="/logo.png" alt="logo" className="w-10"/>
+            <span className="text-xl font-bold text-yellow-500">GALO SCORE</span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-10  ">
+          <div className="hidden lg:flex items-center space-x-10  ">
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
@@ -51,7 +52,7 @@ const Navbar = () => {
         </div>
 
         {/* Right side: Auth Links */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-4">
           <Link
             to="/login"
             className="flex items-center space-x-1 text-gray-100 hover:text-yellow-500 font-medium text-sm"
@@ -70,7 +71,7 @@ const Navbar = () => {
 
         {/* Mobile menu icon */}
         <button
-          className="md:hidden text-gray-300 text-2xl"
+          className="lg:hidden text-gray-300 text-2xl"
           onClick={() => setIsOpen(!isOpen)}
         >
           <FaBars />

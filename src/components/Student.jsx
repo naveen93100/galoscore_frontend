@@ -6,7 +6,7 @@ const Student = () => {
       window.scrollTo(0,0);
     },[])
   return (
-    <div className="bg-gray-100 text-gray-800 pt-32 px-6 pb-16 space-y-20 font-['Roboto_Condensed']">
+    <div className="bg-gray-100 text-gray-800 pt-32 px-6 pb-16 space-y-20 ">
 
 
       {/* <section className="text-center max-w-5xl mx-auto">
@@ -91,6 +91,19 @@ const Student = () => {
 
         <div className="grid gap-8 sm:grid-cols-2">
           {/* Card 1 */}
+          <div className="bg-white shadow-md rounded-xl p-6 text-left border-l-4 flex flex-col items-center justify-center border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
+            <img
+              src="/file-search.png" // Replace with actual hosted image or SVG file
+              alt="Domain Testing"
+              className=" h-24 mb-4"
+            />
+            <h3 className="text-lg font-semibold text-gray-800">Domain-Specific Tests</h3>
+            <p className="text-gray-600 text-sm mt-1">
+              Take assessments tailored to your chosen technical or professional field.
+            </p>
+          </div>
+
+          {/* Card 2 */}
           <div className="bg-white shadow-md rounded-xl p-6 text-left flex flex-col items-center justify-center border-l-4 border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
             <img
               src="/verified.png" // Replace with actual hosted image or SVG file
@@ -103,7 +116,7 @@ const Student = () => {
             </p>
           </div>
 
-          {/* Card 2 */}
+          {/* Card 3 */}
           <div className="bg-white shadow-md rounded-xl p-6 text-left border-l-4 flex flex-col items-center justify-center border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
             <img
               src="/data-reports.png" // Replace with actual hosted image or SVG file
@@ -116,18 +129,7 @@ const Student = () => {
             </p>
           </div>
 
-          {/* Card 3 */}
-          <div className="bg-white shadow-md rounded-xl p-6 text-left border-l-4 flex flex-col items-center justify-center border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
-            <img
-              src="/file-search.png" // Replace with actual hosted image or SVG file
-              alt="Domain Testing"
-              className=" h-24 mb-4"
-            />
-            <h3 className="text-lg font-semibold text-gray-800">Domain-Specific Testing Formats</h3>
-            <p className="text-gray-600 text-sm mt-1">
-              Take assessments tailored to your chosen technical or professional field.
-            </p>
-          </div>
+          
 
           {/* Card 4 */}
           <div className="bg-white shadow-md rounded-xl p-6 text-left border-l-4 flex flex-col items-center justify-center border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
