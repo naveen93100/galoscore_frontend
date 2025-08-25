@@ -7,8 +7,8 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", to: "/" },
-    { name: "Candidate ", to: "/candidate " },
-    { name: "Employer", to: "/employer " },
+    { name: "Fresher", to: "/fresher " },
+    { name: "Recruiter", to: "/recruiter " },
     { name: "Contact", to: "/contact" },
     // { name: "Certificate", to: "/certificate" },
   ];
@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-8 bg-white/20 rounded-full py-1 px-4">
           <Link to="/" className="flex items-center space-x-2">
             <img src="/logo.png" alt="logo" className="w-10"/>
-            <span className="text-xl font-bold text-yellow-500">GALO SCORE</span>
+            <span className="text-xl font-bold text-yellow-500">Galo Score</span>
           </Link>
 
           <div className="hidden lg:flex items-center space-x-10  ">

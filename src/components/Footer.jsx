@@ -27,7 +27,7 @@ const Footer = () => {
               D-120-121, Pocket D, Okhla Phase I, Okhla Industrial Estate, New Delhi, Delhi 110020
             </li>
             <li>
-              <span className="font-medium">Support Hours:</span> Mon - Sat, 10am - 6pm
+              <span className="font-medium">Support Hours:</span> Mon - Sat, 10am - 7pm
             </li>
           </ul>
         </div>

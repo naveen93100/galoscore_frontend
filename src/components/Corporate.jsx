@@ -9,10 +9,9 @@ const Corporate = () => {
 
       {/* Hero Section */}
       <section className="text-center max-w-5xl mx-auto">
-        <h1 className="text-3xl sm:text-5xl font-extrabold mb-4 text-yellow-500">Access Pre-Assessed Talent Without Cost </h1>
-        <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Streamline your recruitment with complimentary access to a vetted pool of candidates who
-          have demonstrated their skills through Galo Score.
+        <h1 className="text-3xl sm:text-5xl font-extrabold mb-4 text-yellow-500">Access a Pre-Assessed Pool of Skilled fresh Graduates </h1>
+        <p className="text-lg text-gray-700 max-w-4xl mx-auto">
+          Hiring fresh graduates is tough — strong resumes don’t always mean strong skills. Many talented students from smaller colleges go unnoticed simply because they lack a big-name tag.With Galo Score, you don’t just hire freshers — you hire freshers with proof of skills
         </p>
       </section>
 

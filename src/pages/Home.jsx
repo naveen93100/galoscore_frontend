@@ -3,6 +3,9 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaLightbulb, FaChartPie, FaHandPointer, FaSearch, FaBriefcase } from "react-icons/fa";
+import { FiEye } from "react-icons/fi";
+import { TbTargetArrow, TbHeartHandshake } from "react-icons/tb";
+
 
 const Home = () => {
   const steps = [
@@ -27,7 +30,7 @@ const Home = () => {
           <div className="space-y-6 lg:space-y-9 ">
             <h1 className="capitalize text-3xl md:text-4xl lg:text-6xl font-bold flex flex-col ">
               Unlock your {''}
-               <span className="text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text">
+              <span className="text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text">
                 dream career
               </span>
             </h1>
@@ -42,7 +45,7 @@ const Home = () => {
                 to="/"
                 className="text-sm  px-3 py-3 bg-yellow-500 text-black font-medium rounded-lg shadow-md hover:bg-yellow-400 hover:shadow-sm active:translate-y-0.5 active:shadow-inner transition-all duration-150"
               >
-                Take the Free Test
+                Take the Test
               </Link>
               <Link
                 to="/"
@@ -96,7 +99,7 @@ const Home = () => {
               </div>
 
               <p className="mt-4 text-gray-700 font-medium">
-                By focusing on Core Branches of Engineering (Civil, Chemical, Electrical), aptitude, and logical reasoning, we give graduates a fair and equal chance to showcase their employability.
+                By focusing on Core Branches of Engineering (Civil, Chemical, Electrical,Production), aptitude, and logical reasoning, we give graduates a fair and equal chance to showcase their employability.
               </p>
             </div>
           </div>
@@ -107,7 +110,10 @@ const Home = () => {
           <div className="bg-white p-8 rounded-xl shadow-md">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Why Galo Score Matters</h3>
             <p className="text-gray-700 mb-4">
-
+              Every year, lakhs of students take competitive exams like JEE. Only a handful make it to IITs, while the rest — despite having skills and talent — miss out on the “branded” college name. Many of them struggle to get noticed by recruiters and remain unemployed.
+              Galo Score solves this problem.
+              <br />
+              <br />
               We built Galo Score to bridge the gap between skilled freshers, especially B.Tech, B.Com, or B.Sc graduates from Tier 2 and Tier 3 colleges and the employers who are looking for real potential, not just big college names. We help you prove your skills, earn a credible score, and add value to your resume.
             </p>
             <div className="text-gray-700 mb-4 ">
@@ -127,16 +133,19 @@ const Home = () => {
 
           {/* Vision/Mission/Values */}
           <div className="grid md:grid-cols-3 gap-6 text-center ">
-            <div className="bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
+            <div className=" bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
+              <FiEye className="text-3xl mx-auto " />
               <h4 className="text-xl font-bold mb-2">Our Vision</h4>
               <p>A world where skills are valued over labels, and every capable graduate has
                 access to meaningful career opportunities </p>
             </div>
             <div className="bg-black/90 text-white p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
+            <TbTargetArrow className="text-3xl mx-auto " />
               <h4 className="text-xl font-bold mb-2">Our Mission</h4>
               <p>At Galo Score, we believe everyone deserves the opportunity to showcase their true potential regardless of their background.</p>
             </div>
             <div className="bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
+              <TbHeartHandshake className="text-3xl mx-auto " />
               <h4 className="text-xl font-bold mb-2">Our Values</h4>
               <p>We help fresher’s show their true potential and get noticed by employers through
                 a simple, trusted test score </p>
@@ -189,7 +198,7 @@ const Home = () => {
                 <ul className="list-disc pl-5 space-y-2">
                   <li>Recognized by top companies</li>
                   <li>Tests on current job-relevant skills</li>
-                  <li>Verified badge and digital certificate</li>
+                  <li>Verified badge and digital Galo Score card</li>
                   <li>Instant section-wise feedback</li>
                   <li>Smart job/internship alerts</li>
                   <li>Instant online verification</li>
