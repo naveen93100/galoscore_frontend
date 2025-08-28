@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <>
 
-      <div className=" min-h-screen flex flex-col justify-center items-center px-4 py-12 sm:pt-30 pt-40 bg-gray-100">
+      <div className=" min-h-screen flex flex-col justify-center items-center px-4 py-12 pt-40 md:pt-20 bg-gray-100 font-[Roboto_Condensed]">
         <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
           {/* Left Content */}
@@ -68,110 +68,117 @@ const Home = () => {
       </div>
 
       {/* about */}
-      <div className="min-h-screen bg-gray-300 px-6 py-16  ">
-        <div className="max-w-6xl mx-auto flex flex-col gap-16 backdrop-blur-sm bg-white/50 rounded-2xl p-2">
+      <div className="min-h-screen bg-gradient-to-b from-gray-100 via-gray-200 to-gray-300 px-4 sm:px-6 lg:px-12 font-[Roboto_Condensed]">
+        <div className="max-w-8xl mx-auto flex flex-col gap-20 backdrop-blur-lg bg-white/50 rounded-3xl shadow-2xl p-6 sm:p-5">
 
-          <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10 w-full">
+          {/* Hero Section */}
+          <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-5">
             {/* Image Section */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 flex justify-center">
               <img
                 src="/about.png"
                 alt="Students studying"
-                className="w-full"
+                className="w-full max-w-sm md:max-w-md rounded-2xl object-contain"
               />
             </div>
 
             {/* Text Content Section */}
             <div className="w-full md:w-1/2">
-              <h2 className="text-4xl font-bold text-yellow-500 mb-4">Your test. Your opportunity.</h2>
-              <p className="text-gray-700 leading-relaxed font-medium  ">
-                Every year, thousands of talented students graduate from colleges across India, but many struggle to secure interviews or gain the attention of recruiters.
+              <h2 className="text-3xl sm:text-4xl  font-extrabold text-yellow-500 leading-tight mb-6">
+                Your Test. Your Opportunity.
+              </h2>
+              <p className="text-gray-700 leading-relaxed font-medium mb-3">
+                Every year, thousands of talented students graduate across India but struggle to secure interviews or attract recruiters' attention.
+              </p>
+              <p className="text-gray-700 leading-relaxed font-medium mb-3">
+                We started <span className="font-semibold text-yellow-600">Galo Score</span> to solve that problem.
               </p>
 
-              <p className="text-gray-700 leading-relaxed font-medium mt-1">We started Galo Score to solve that problem. </p>
-
               <div className="mt-4 text-gray-700 font-medium space-y-2">
-                <p>It includes:</p>
-                <ul className="list-disc list-inside pl-2">
-                  <li>A comprehensive general aptitude test</li>
-                  <li>A role-specific domain skills test</li>
+                <p className="font-semibold">It includes:</p>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Comprehensive general aptitude test</li>
+                  <li>Role-specific domain skills test</li>
                 </ul>
               </div>
 
-              <p className="mt-4 text-gray-700 font-medium">
-                By focusing on Core Branches of Engineering (Civil, Chemical, Electrical,Production), aptitude, and logical reasoning, we give graduates a fair and equal chance to showcase their employability.
+              <p className="mt-6 text-gray-700 font-medium">
+                By focusing on Core Engineering Branches (Civil, Chemical, Electrical, Production),
+                aptitude, and logical reasoning, we give graduates a fair chance to showcase their employability.
               </p>
             </div>
           </div>
 
-
           {/* Problem Section */}
-
-          <div className="bg-white p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Why Galo Score Matters</h3>
-            <p className="text-gray-700 mb-4">
-              Every year, lakhs of students take competitive exams like JEE. Only a handful make it to IITs, while the rest — despite having skills and talent — miss out on the “branded” college name. Many of them struggle to get noticed by recruiters and remain unemployed.
-              Galo Score solves this problem.
-              <br />
-              <br />
-              We built Galo Score to bridge the gap between skilled freshers, especially B.Tech, B.Com, or B.Sc graduates from Tier 2 and Tier 3 colleges and the employers who are looking for real potential, not just big college names. We help you prove your skills, earn a credible score, and add value to your resume.
+          <div className="bg-white rounded-2xl shadow-xl p-5 sm:p-10">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">
+              Why Galo Score Matters
+            </h3>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Every year, lakhs of students take competitive exams like JEE. Only a handful make it to IITs,
+              while the rest — despite having skills and talent — miss out on the “branded” college name.
+              Many of them struggle to get noticed by recruiters and remain unemployed.
+              <br /><br />
+              Galo Score bridges this gap for B.Tech, B.Com, and B.Sc graduates from Tier 2 & 3 colleges,
+              helping them prove their skills and add real value to their resumes.
             </p>
-            <div className="text-gray-700 mb-4 ">
-              <strong>More Than a Test — A Mark of Readiness</strong><br />
-              Galo Score is more than an exam; it is a professional credential.
-              <ul className="list-disc pl-5 mt-2 space-y-2">
-                <li>Apply with confidence based on objective performance metrics</li>
-                <li>Highlight competencies beyond academic transcripts</li>
-                <li>Differentiate yourself with verified evidence of job readiness</li>
+
+            <div className="text-gray-700 leading-relaxed mb-6">
+              <strong className="block text-lg text-gray-800 mb-2">More Than a Test — A Mark of Readiness</strong>
+              <p>Galo Score is a professional credential:</p>
+              <ul className="list-disc pl-5 mt-3 space-y-2">
+                <li>Apply with confidence using objective performance metrics</li>
+                <li>Highlight skills beyond academic transcripts</li>
+                <li>Stand out with verified proof of job readiness</li>
               </ul>
             </div>
+
             <p className="text-gray-700">
-              For students from Tier 2 & 3 colleges, Galo Score offers an equitable platform to be recognized—without any cost. For employers, it provides a trusted, data-driven hiring tool available at no charge during the current phase.
+              For students from Tier 2 & 3 colleges, Galo Score offers an equitable, free platform to gain recognition.
+              For employers, it provides a trusted, data-driven hiring tool—available at no charge during our launch phase.
             </p>
           </div>
 
-
           {/* Vision/Mission/Values */}
-          <div className="grid md:grid-cols-3 gap-6 text-center ">
-            <div className=" bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
-              <FiEye className="text-3xl mx-auto " />
-              <h4 className="text-xl font-bold mb-2">Our Vision</h4>
-              <p>A world where skills are valued over labels, and every capable graduate has
-                access to meaningful career opportunities </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 text-black p-5 rounded-2xl shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300">
+              <FiEye className="text-4xl mx-auto mb-4" />
+              <h4 className="text-xl font-bold mb-3 text-center">Our Vision</h4>
+              <p className="text-sm sm:text-base">A world where skills are valued over labels, and every capable graduate has
+                access to meaningful career opportunities.</p>
             </div>
-            <div className="bg-black/90 text-white p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
-            <TbTargetArrow className="text-3xl mx-auto " />
-              <h4 className="text-xl font-bold mb-2">Our Mission</h4>
-              <p>At Galo Score, we believe everyone deserves the opportunity to showcase their true potential regardless of their background.</p>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-5 rounded-2xl shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300">
+              <TbTargetArrow className="text-4xl mx-auto mb-4" />
+              <h4 className="text-xl font-bold mb-3 text-center">Our Mission</h4>
+              <p className="text-sm sm:text-base">At Galo Score, we believe everyone deserves the opportunity to showcase their potential—regardless of their background.</p>
             </div>
-            <div className="bg-yellow-500 text-black p-6 rounded-lg shadow-md hover:scale-95 transition-all ease-linear">
-              <TbHeartHandshake className="text-3xl mx-auto " />
-              <h4 className="text-xl font-bold mb-2">Our Values</h4>
-              <p>We help fresher’s show their true potential and get noticed by employers through
-                a simple, trusted test score </p>
+
+            <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 text-black p-5 rounded-2xl shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300">
+              <TbHeartHandshake className="text-4xl mx-auto mb-4" />
+              <h4 className="text-xl font-bold mb-3 text-center">Our Values</h4>
+              <p className="text-sm sm:text-base">We empower freshers to showcase their potential and get noticed through a simple, trusted test score.</p>
             </div>
           </div>
-
-          {/* Backed by Legacy */}
 
         </div>
       </div>
 
-      <div className="min-h-screen bg-gray-300 px-6 py-16 ">
-        <div className="max-w-6xl mx-auto flex flex-col gap-16 backdrop-blur-sm bg-white/50 rounded-2xl p-4">
+      <div className="min-h-screen bg-gray-300 px-4 sm:px-6 lg:px-12 py-10 font-[Roboto_Condensed]">
+        <div className="max-w-8xl  mx-auto flex flex-col gap-16 backdrop-blur-sm bg-white/50 rounded-2xl p-4">
 
           {/* Hero Section */}
           <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10 w-full">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 flex justify-center">
               <img
                 src="/interview.png"
                 alt="Industry Ready"
-                className="w-full"
+                className="w-full max-w-sm md:max-w-md rounded-2xl object-contain"
               />
             </div>
 
-            <div className="w-full md:w-1/2">
-              <h2 className="text-4xl font-bold text-yellow-500 mb-0">Unlock Your Career Potential with Galo Score</h2>
+            <div className="w-full md:w-1/2 px-6">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-yellow-500 leading-tight mb-6">Unlock Your Career Potential with Galo Score</h2>
               <p className="mt-4 text-gray-700 leading-relaxed font-medium">
                 Galo Score isn’t just another test, it’s your proof of real-world ability. Show recruiters you’ve got the technical skills to hit the ground running, even as a fresh graduate. Get your verified score, share it on your resume and LinkedIn, and step confidently into the jobs you’ve always wanted.
               </p>
@@ -179,29 +186,51 @@ const Home = () => {
           </div>
 
           {/* Challenges vs Benefits */}
-          <div className="bg-white p-8 rounded-xl shadow-md">
-            {/* <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Why GALO Score Makes You Stand Out</h3> */}
+          <div className="bg-white  p-8 rounded-xl shadow-md">
+
             <div className="grid md:grid-cols-2 gap-8 text-gray-700">
               <div>
                 <h4 className="font-semibold mb-2">Your Challenge as a Fresher</h4>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Hard to get noticed by recruiters</li>
-                  <li>Skill gap between college and industry</li>
-                  <li>Resume looks like everyone else’s</li>
-                  <li>No clarity on strengths or weaknesses</li>
-                  <li>Difficult to find relevant job openings</li>
-                  <li>Lack of trust from companies</li>
+                <ul className="list-disc  space-y-2">
+                  {[
+                    "Hard to get noticed by recruiters",
+                    "Skill gap between college and industry",
+                    "Resume looks like everyone else’s",
+                    "No clarity on strengths or weaknesses",
+                    "Difficult to find relevant job openings",
+                    "Lack of trust from companies"
+                  ].map((item, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-center gap-3 hover:bg-gradient-to-l from-yellow-400 to-yellow-500 transition-all rounded-2xl p-3 shadow-md backdrop-blur-sm cursor-pointer"
+                    >
+                      <span className="size-2 bg-yellow-600 rounded-full"></span>
+                      <span className="text-gray-800 font-medium">{item}</span>
+                    </li>
+                  ))}
+
                 </ul>
               </div>
               <div>
                 <h4 className="font-semibold mb-2">How Galo Score Helps</h4>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Recognized by top companies</li>
-                  <li>Tests on current job-relevant skills</li>
-                  <li>Verified badge and digital Galo Score card</li>
-                  <li>Instant section-wise feedback</li>
-                  <li>Smart job/internship alerts</li>
-                  <li>Instant online verification</li>
+                <ul className="list-disc  space-y-2">
+                  {[
+                    "Recognized by top companies",
+                    "Tests on current job-relevant skills",
+                    "Verified badge and digital GALO Score card",
+                    "Instant section-wise feedback",
+                    "Smart job/internship alerts",
+                    "Instant online verification"
+                  ].map((item, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-center gap-3 hover:bg-gradient-to-l from-yellow-400 to-yellow-500 transition-all rounded-2xl p-3 shadow-md backdrop-blur-sm cursor-pointer"
+                    >
+                      <span className="size-2 bg-yellow-600 rounded-full"></span>
+                      <span className="text-gray-800 font-medium">{item}</span>
+                    </li>
+                  ))}
+
                 </ul>
               </div>
             </div>
@@ -210,7 +239,7 @@ const Home = () => {
       </div>
 
       {/* galo journey  */}
-      <section className="w-full bg-gray-300 py-10 px-6 md:px-12 ">
+      <section className="w-full bg-gray-300 py-10 px-6 md:px-12 font-[Roboto_Condensed]">
         <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-2xl p-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-4">
             The Galo Score Journey

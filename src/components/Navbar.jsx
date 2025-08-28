@@ -10,6 +10,8 @@ const Navbar = () => {
     { name: "Fresher", to: "/fresher " },
     { name: "Recruiter", to: "/recruiter " },
     { name: "Contact", to: "/contact" },
+    { name: "Blogs", to: "/blogs" },
+
     // { name: "Certificate", to: "/certificate" },
   ];
 

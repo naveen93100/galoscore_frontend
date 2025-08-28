@@ -16,6 +16,7 @@ import Ece from "./pages/Dashboard/Student/Ece"
 import Me from "./pages/Dashboard/Student/Me"
 import Contact from "./pages/Contact"
 import Certificate from "./pages/Certificate"
+import Blogs from "./pages/Blogs"
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/certificate" element={<Certificate/>}/>
         <Route path="/recruiter" element={<Corporate />} />
+        <Route path="/blogs" element={<Blogs/>}/>
         {/* <Route path="/practice" element={<Practice/>}/> */}
         {token ?
           <Route path="/student" element={<StudentDashboard />} >
