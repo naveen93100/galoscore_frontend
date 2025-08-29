@@ -1,107 +1,124 @@
 import { useEffect } from "react";
 
-
 const Student = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+  }, []);
+
   return (
-    <div className="bg-gray-100 text-gray-800 pt-32 px-6 pb-16 space-y-20 ">
+    <div className="bg-gradient-to-b from-white via-gray-200 to-gray-100 text-gray-800 pt-30 px-6 pb-28 space-y-10 font-[Roboto_Condensed]">
 
-      <section className="text-center max-w-5xl mx-auto px-4">
-        <h1 className="text-3xl sm:text-5xl font-extrabold mb-6 text-yellow-500">
-          Transform Potential Into Verified Proof
+      {/* Hero Section */}
+      <section className="text-center max-w-6xl mx-auto px-4">
+        <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-transparent bg-clip-text">
+          Transform Your Skills Into Career-Ready Proof
         </h1>
-
-        <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-          Getting noticed as a fresher can be tough, especially without a top-tier college tag. That’s why Galo Score is here — to help you prove your true potential
+        <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+          Break through the noise. Galo Score helps you showcase your real
+          potential — beyond college names and buzzwords.
         </p>
-
-
+        
       </section>
 
-      <div className="grid gap-8 sm:grid-cols-2">
-        {/* Card 1 */}
-        <div className="bg-white shadow-md rounded-xl p-6 text-left flex flex-col items-center justify-center border-l-4 border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
-          <img
-            src="/file-search.png" 
-            alt="Domain Testing"
-            className=" h-24 mb-4"
-          />
-          <h3 className="text-lg font-semibold text-gray-800">Domain-Specific Tests</h3>
-          <p className="text-gray-600 text-sm mt-1">
-            Take assessments tailored to your chosen technical or professional field.
+      {/*  Story Section */}
+      <section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center bg-white p-4 rounded-2xl">
+        <div className="space-y-6">
+          <h2 className="capitalize text-3xl sm:text-4xl font-bold text-gray-900 leading-snug">
+            The job search shouldn't be about luck — it should be about <span className="text-yellow-600">merit</span>.
+          </h2>
+          <p className="text-gray-700 leading-relaxed font-semibold">
+            Remember the all-nights, the endless revision, the moments you questioned if it was worth it?
+            You earned your skills through dedication and hard work — but the market isn’t always fair.
+             You're more than just a resume—you're a proven talent with real-world potential.
+
+          </p>
+          <p className="text-gray-700 leading-relaxed font-semibold">
+            Galo Score gives your hard work a voice. Take specialized tests, get a verified scorecard,
+            and connect directly with recruiters who want <span className="font-semibold text-yellow-600">real talent</span>.
+          </p>
+          <p className="text-gray-800 font-semibold">
+            Stop feeling invisible. Start being noticed. Your future deserves to be seen.
           </p>
         </div>
-
-        {/* Card 2 */}
-        <div className="bg-white shadow-md rounded-xl p-6 text-left flex flex-col items-center justify-center border-l-4 border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
+        <div className="relative flex justify-center border-1 border-t-0 border-l-0 border-yellow-500 rounded-2xl shadow-md">
           <img
-            src="/verified.png" 
-            alt="Verified Scorecards"
-            className="h-24 mb-4 "
+            src="/done.png" 
+            alt="Student Success"
+            className="w-80 md:w-[26rem] "
           />
-          <h3 className="text-lg font-semibold text-gray-800">Verified, Shareable Scorecard</h3>
-          <p className="text-gray-600 text-sm mt-1">
-            Show your performance to employers with confidence and transparency.
-          </p>
-        </div>
-
-        {/* Card 3 */}
-        {/* <div className="bg-white shadow-md rounded-xl p-6 text-left border-l-4 flex flex-col items-center justify-center border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
-            <img
-              src="/data-reports.png" // Replace with actual hosted image or SVG file
-              alt="Skill-Based Feedback"
-              className=" h-24 mb-4"
-            />
-            <h3 className="text-lg font-semibold text-gray-800">Detailed Skill-Based Feedback</h3>
-            <p className="text-gray-600 text-sm mt-1">
-              Understand your strengths and areas for improvement with precision.
-            </p>
-          </div> */}
-
-
-
-        {/* Card 4 */}
-        {/* <div className="bg-white shadow-md rounded-xl p-6 text-left border-l-4 flex flex-col items-center justify-center border-yellow-500 hover:scale-105 transition-all ease-in-out duration-300">
-          <img
-            src="/certificate.png" // Replace with actual hosted image or SVG file
-            alt="Certification"
-            className=" h-24 mb-4"
-          />
-          <h3 className="text-lg font-semibold text-gray-800">Official Galo Score Certification</h3>
-          <p className="text-gray-600 text-sm mt-1">
-            Boost your resume with an official, credible credential that validates your potential.
-          </p>
-        </div> */}
-      </div>
-
-
-
-      {/* How It Works Section */}
-      <section>
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">How It Works</h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition text-center">
-            <h4 className="text-xl font-semibold mb-2">1. Take the  Test</h4>
-            <p className="text-gray-600">Complete a comprehensive, no-cost assessment designed to measure your aptitude
-              and domain knowledge. </p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition text-center">
-            <h4 className="text-xl font-semibold mb-2">2. Receive Verified Feedback</h4>
-            <p className="text-gray-600">Access detailed performance insights to identify strengths and areas for
-              development. </p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition text-center">
-            <h4 className="text-xl font-semibold mb-2">3. Add Galo Score to Your CV</h4>
-            <p className="text-gray-600">Leverage an industry-recognized certification to strengthen your job applications.</p>
-          </div>
         </div>
       </section>
 
+      {/* Key Features */}
+      <section className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+          Why Choose Galo Score?
+        </h2> 
+        <div className="grid md:grid-cols-2 gap-8">
+          {[
+            {
+              img: "/file-search.png",
+              title: "Domain-Specific Tests",
+              desc: "Take assessments tailored to your chosen technical or professional field."
+            },
+            {
+              img: "/verified.png",
+              title: "Verified & Shareable Scorecard",
+              desc: "Showcase your verified performance with confidence and credibility."
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-transform hover:-translate-y-2 text-center hover:border-t-1 border-yellow-500"
+            >
+              <img src={item.img} alt={item.title} className="h-20 mx-auto mb-4" />
+              <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
+              <p className="text-gray-600 text-sm mt-2">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
+      {/* How It Works */}
+      <section className="bg-white py-16 rounded-3xl shadow-inner max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+          How It Works
+        </h2>
+        <div className="grid md:grid-cols-3 gap-10 px-6">
+          {[
+            {
+              step: "1",
+              title: "Take the Test",
+              desc: "Complete a free, comprehensive assessment designed to evaluate your core skills."
+            },
+            {
+              step: "2",
+              title: "Get Verified Insights",
+              desc: "Receive detailed feedback and verified scores you can proudly showcase."
+            },
+            {
+              step: "3",
+              title: "Boost Your CV",
+              desc: "Add Galo Score to your resume and impress recruiters instantly."
+            }
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-lg transition"
+            >
+              <div className="w-12 h-12 flex items-center justify-center bg-yellow-500 text-white font-bold rounded-full mb-4 mx-auto">
+                {item.step}
+              </div>
+              <h4 className="text-xl font-semibold mb-2 text-center">{item.title}</h4>
+              <p className="text-gray-600 text-center">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
 
 export default Student;
+
+

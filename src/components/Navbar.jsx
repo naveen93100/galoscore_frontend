@@ -28,7 +28,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="w-full fixed top-0 p-3 z-50">
+    <nav className="w-full fixed top-0 p-3 z-50 font-[Roboto_Condensed]">
       <div className="max-w-7xl shadow-lg mx-auto px-4 sm:px-6 py-3 flex justify-between items-center rounded-full bg-black backdrop-blur-2xl">
         {/* Left side: Logo + NavLinks */}
         <div className="flex items-center space-x-8 bg-white/20 rounded-full py-1 px-4">

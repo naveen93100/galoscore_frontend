@@ -87,14 +87,14 @@ const Home = () => {
               <h2 className="text-3xl sm:text-4xl  font-extrabold text-yellow-500 leading-tight mb-6">
                 Your Test. Your Opportunity.
               </h2>
-              <p className="text-gray-700 leading-relaxed font-medium mb-3">
+              <p className="text-gray-700 leading-relaxed font-semibold mb-3">
                 Every year, thousands of talented students graduate across India but struggle to secure interviews or attract recruiters' attention.
               </p>
-              <p className="text-gray-700 leading-relaxed font-medium mb-3">
+              <p className="text-gray-700 leading-relaxed font-semibold mb-3">
                 We started <span className="font-semibold text-yellow-600">Galo Score</span> to solve that problem.
               </p>
 
-              <div className="mt-4 text-gray-700 font-medium space-y-2">
+              <div className="mt-4 text-gray-700 font-semibold space-y-2">
                 <p className="font-semibold">It includes:</p>
                 <ul className="list-disc list-inside space-y-1">
                   <li>Comprehensive general aptitude test</li>
@@ -102,7 +102,7 @@ const Home = () => {
                 </ul>
               </div>
 
-              <p className="mt-6 text-gray-700 font-medium">
+              <p className="mt-6 text-gray-700 font-semibold">
                 By focusing on Core Engineering Branches (Civil, Chemical, Electrical, Production),
                 aptitude, and logical reasoning, we give graduates a fair chance to showcase their employability.
               </p>
