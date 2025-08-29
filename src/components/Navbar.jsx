@@ -11,8 +11,6 @@ const Navbar = () => {
     { name: "Recruiter", to: "/recruiter " },
     { name: "Contact", to: "/contact" },
     { name: "Blogs", to: "/blogs" },
-
-    // { name: "Certificate", to: "/certificate" },
   ];
 
   useEffect(() => {
@@ -57,18 +55,18 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center space-x-4">
           <Link
             to="/login"
-            className="flex items-center space-x-1 text-gray-100 hover:text-yellow-500 font-medium text-sm"
+            className="flex items-center space-x-1 bg-yellow-500 text-black px-4 py-2 rounded-full hover:bg-yellow-400 font-medium text-sm"
           >
             <FaSignInAlt />
             <span>Login</span>
           </Link>
-          <Link
+          {/* <Link
             to="/signup"
             className="flex items-center space-x-1 bg-yellow-500 text-black px-4 py-2 rounded-full hover:bg-yellow-400 font-medium text-sm"
           >
             <FaUserPlus />
             <span>Sign up</span>
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile menu icon */}
