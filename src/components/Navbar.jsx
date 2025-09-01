@@ -60,13 +60,6 @@ const Navbar = () => {
             <FaSignInAlt />
             <span>Login</span>
           </Link>
-          {/* <Link
-            to="/signup"
-            className="flex items-center space-x-1 bg-yellow-500 text-black px-4 py-2 rounded-full hover:bg-yellow-400 font-medium text-sm"
-          >
-            <FaUserPlus />
-            <span>Sign up</span>
-          </Link> */}
         </div>
 
         {/* Mobile menu icon */}
