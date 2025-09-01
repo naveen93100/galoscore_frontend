@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Student = () => {
   useEffect(() => {
@@ -17,7 +18,7 @@ const Student = () => {
           Break through the noise. Galo Score helps you showcase your real
           potential — beyond college names and buzzwords.
         </p>
-        
+
       </section>
 
       {/*  Story Section */}
@@ -29,7 +30,7 @@ const Student = () => {
           <p className="text-gray-700 leading-relaxed font-semibold">
             Remember the all-nights, the endless revision, the moments you questioned if it was worth it?
             You earned your skills through dedication and hard work — but the market isn’t always fair.
-             You're more than just a resume—you're a proven talent with real-world potential.
+            You're more than just a resume—you're a proven talent with real-world potential.
 
           </p>
           <p className="text-gray-700 leading-relaxed font-semibold">
@@ -42,7 +43,7 @@ const Student = () => {
         </div>
         <div className="relative flex justify-center border-1 border-t-0 border-l-0 border-yellow-500 rounded-2xl shadow-md">
           <img
-            src="/done.png" 
+            src="/done.png"
             alt="Student Success"
             className="w-80 md:w-[26rem] "
           />
@@ -53,8 +54,8 @@ const Student = () => {
       <section className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
           Why Choose Galo Score?
-        </h2> 
-        <div className="grid md:grid-cols-2 gap-8">
+        </h2>
+        {/* <div className="grid md:grid-cols-2 gap-8">
           {[
             {
               img: "/file-search.png",
@@ -76,7 +77,44 @@ const Student = () => {
               <p className="text-gray-600 text-sm mt-2">{item.desc}</p>
             </div>
           ))}
+        </div> */}
+     
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {[
+            {
+              img: "/file-search.png",
+              title: "Domain-Specific Tests",
+              desc: "Take assessments tailored to your chosen technical or professional field.",
+              link: "/test" // Add link only for this card
+            },
+            {
+              img: "/verified.png",
+              title: "Verified & Shareable Scorecard",
+              desc: "Showcase your verified performance with confidence and credibility."
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-transform hover:-translate-y-2 text-center hover:border-t-1 border-yellow-500"
+            >
+              {item.link ? (
+                <Link to={item.link}>
+                  <img src={item.img} alt={item.title} className="h-20 mx-auto mb-4" />
+                  <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
+                  <p className="text-gray-600 text-sm mt-2">{item.desc}</p>
+                </Link>
+              ) : (
+                <>
+                  <img src={item.img} alt={item.title} className="h-20 mx-auto mb-4" />
+                  <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
+                  <p className="text-gray-600 text-sm mt-2">{item.desc}</p>
+                </>
+              )}
+            </div>
+          ))}
         </div>
+
       </section>
 
       {/* How It Works */}
