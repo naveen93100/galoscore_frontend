@@ -5,7 +5,8 @@ import { IoIosArrowUp } from "react-icons/io";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [loginOpen, setLoginOpen] = useState(false); // for desktop dropdown
+  const [loginOpen, setLoginOpen] = useState(false);
+  const [selectedDropdown, setSelectedDropdown] = useState('for employer');
 
   const navLinks = [
     { name: "Home", to: "/" },
@@ -28,8 +29,8 @@ const Navbar = () => {
   }, [isOpen, loginOpen]);
 
   return (
-    <nav className="w-full fixed top-0 p-3 z-50 font-[Roboto_Condensed]">
-      <div className="max-w-7xl shadow-lg mx-auto px-4 sm:px-6 py-3 flex justify-between items-center rounded-full bg-black backdrop-blur-2xl">
+    <nav className="w-full fixed top-0 z-50 font-[Roboto_Condensed]">
+      <div className="w-full shadow-lg mx-auto px-4 sm:px-6 py-3 flex justify-between items-center  bg-black backdrop-blur-2xl">
 
         {/* Logo and Links */}
         <div className="flex items-center space-x-8 bg-white/20 rounded-full py-1 px-4">
@@ -54,13 +55,35 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Login Dropdown */}
-        <div className="relative hidden lg:flex items-center">
+        <div className="relative hidden lg:flex items-center gap-1">
+          {/* login */}
+          <Link
+            to='/login'
+            className="flex items-center space-x-1 text-white px-4 py-2 rounded-full hover:text-yellow-500 font-medium text-sm"
+          >
+            <FaSignInAlt />
+            <span>Login</span>
+
+          </Link>
+          {/* signup */}
+
+          <Link
+            to='/signup'
+            className="flex items-center space-x-1 bg-yellow-500 text-black px-4 py-2 rounded-full hover:bg-yellow-400 font-medium text-sm"
+          >
+            <FaSignInAlt />
+            <span>Signup</span>
+
+          </Link>
+
+          <span className="w-[1.7px] h-5 bg-gray-400 inline-block" />
+          {/* dropdown */}
           <button
             onClick={() => setLoginOpen(!loginOpen)}
             className="flex items-center space-x-1 bg-yellow-500 text-black px-4 py-2 rounded-full hover:bg-yellow-400 font-medium text-sm"
           >
-            <FaSignInAlt />
-            <span>Login</span>
+
+            <span className="capitalize">{selectedDropdown}</span>
             <svg
               className={`w-3 h-3 ml-1 transition-transform ${loginOpen ? "rotate-180" : ""}`}
               fill="none"
@@ -77,16 +100,22 @@ const Navbar = () => {
               <Link
                 to="/login/recruiter"
                 className="block px-4 py-2 text-gray-700 hover:bg-yellow-100"
-                onClick={() => setLoginOpen(false)}
+                onClick={() => {
+                  setSelectedDropdown('for recruiter')
+                  setLoginOpen(false)
+                }}
               >
-               For Recruiter 
+                For Recruiter
               </Link>
               <Link
                 to="/login"
                 className="block px-4 py-2 text-gray-700 hover:bg-yellow-100 rounded-b-lg"
-                onClick={() => setLoginOpen(false)}
+                onClick={() => {
+                  setSelectedDropdown('for employer')
+                  setLoginOpen(false)
+                }}
               >
-               For Fresher
+                For Employer
               </Link>
             </div>
           )}
@@ -118,29 +147,29 @@ const Navbar = () => {
               onClick={() => setLoginOpen(!loginOpen)}
               className="flex items-center justify-between w-full px-4 py-2 border border-gray-300 rounded-md text-white hover:bg-gray-700 transition"
             >
-              <span>Login</span>
-              <IoIosArrowUp size={20} className={`${loginOpen?'rotate-0':'rotate-180'} transition-transform ease-in-out`}/>
+              <span className="capitalize">{selectedDropdown}</span>
+              <IoIosArrowUp size={20} className={`${loginOpen ? 'rotate-0' : 'rotate-180'} transition-transform ease-in-out`} />
             </button>
 
-          
+
             {loginOpen && (
               <div className="flex flex-col w-full mt-1 space-y-1 px-2 bg-gray-500 rounded-2xl py-2">
                 <Link
                   to="/login/recruiter"
                   className="w-full px-4 py-2 text-white hover:bg-gray-700 rounded-md text-center transition text-lg"
-                  onClick={() => { setIsOpen(false); setLoginOpen(false); }}
+                  onClick={() => { setIsOpen(false); setLoginOpen(false);setSelectedDropdown('for recruiter') }}
                 >
                   For Recruiter
                 </Link>
                 <Link
                   to="/login"
                   className="w-full px-4 py-2 text-white hover:bg-gray-700 rounded-md text-center transition text-lg"
-                  onClick={() => { setIsOpen(false); setLoginOpen(false); }}
+                  onClick={() => { setIsOpen(false); setLoginOpen(false);setSelectedDropdown('for employer') }}
                 >
                   For Fresher
                 </Link>
               </div>
-            )}
+             )}
           </div>
 
           {navLinks.map((link) => (
@@ -156,14 +185,25 @@ const Navbar = () => {
           ))}
 
 
-          <Link
-            to="/signup"
-            className="flex items-center justify-center gap-2 px-6 py-2 bg-yellow-500 text-black rounded-xl hover:bg-yellow-400 font-semibold shadow-md transition"
-            onClick={() => setIsOpen(false)}
-          >
-            <FaUserPlus />
-            <span>Register</span>
-          </Link>
+          <div className="flex gap-2">
+
+            <Link
+              to="/login"
+              className="flex items-center justify-center gap-2 px-6 py-2 bg-yellow-500 text-black rounded-xl hover:bg-yellow-400 font-semibold shadow-md transition"
+              onClick={() => setIsOpen(false)}
+            >
+              <FaUserPlus />
+              <span className="text-lg">Login</span>
+            </Link>
+            <Link
+              to="/signup"
+              className="flex items-center justify-center gap-2 px-6 py-2 bg-yellow-500 text-black rounded-xl hover:bg-yellow-400 font-semibold shadow-md transition"
+              onClick={() => setIsOpen(false)}
+            >
+              <FaUserPlus />
+              <span className="text-lg">Register</span>
+            </Link>
+          </div>
         </div>
       )}
     </nav>

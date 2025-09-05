@@ -1,11 +1,8 @@
 import { useForm } from "react-hook-form";
-import { GoogleLogin } from '@react-oauth/google';
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import CompleteProfileModal from "../components/CompleteProfileModal";
-import { useDispatch } from 'react-redux';
-import { setLoginUserData, setToken } from "../slices/authSlice";
-import toast from "react-hot-toast";
+ 
 
 const RecruiterLogin = () => {
   const [userSignupinfo, setUserSignupinfo] = useState(null);
@@ -23,9 +20,7 @@ const RecruiterLogin = () => {
    
   };
 
-  const handleGoogleLogin = async (data) => {
-    
-  };
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -53,20 +48,6 @@ const RecruiterLogin = () => {
         <div className="w-full md:w-1/2 p-8 bg-black/90 shadow-md rounded-lg max-w-md mx-auto">
           <h2 className="text-3xl font-semibold mb-6 text-center text-gray-200 underline">Recruiter Login</h2>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-
-            {/* Company Name */}
-            <div>
-              <label className="block text-gray-200 mb-1">Company Name</label>
-              <input
-                type="text"
-                {...register("companyName", { required: "Company Name is required" })}
-                placeholder="Your Company"
-                className="w-full px-4 py-2 border text-white border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
-              />
-              {errors.companyName && (
-                <p className="text-red-500 text-sm mt-1">{errors.companyName.message}</p>
-              )}
-            </div>
 
             {/* Email */}
             <div>
@@ -113,10 +94,6 @@ const RecruiterLogin = () => {
               Login
             </button>
           </form>
-
-          <div className="mt-4 z-10">
-            <GoogleLogin onSuccess={handleGoogleLogin} onError={handleGoogleLogin} />
-          </div>
 
           <p className="mt-4 text-sm text-gray-500 text-center">
             Don't have an account? <Link to='#' className="text-yellow-500 font-medium cursor-pointer">Sign up</Link>
