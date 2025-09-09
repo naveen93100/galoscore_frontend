@@ -1,15 +1,11 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-import { Navigation, Autoplay } from "swiper/modules";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
+const BlogsDetail = () => {
 
-const Blog = () => {
+  const { id } = useParams();
 
+ 
     const blog = [
 
         {
@@ -146,75 +142,45 @@ Recruitment is evolving, and the organizations that embrace skill-first hiring w
 
     ];
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-        <div className=" bg-gradient-to-b min-h-screen from-yellow-50 via-white to-yellow-50 pt-18">
-            <div className="space-y-10">
-                <div className="border w-full overflow-hidden">
-                    <Swiper
-                        className="aspect-[16/9] sm:aspect-[25/9]"
-                        modules={[Navigation, Autoplay]}
-                        slidesPerView={1}
-                        autoplay={{ delay: 3000 }}
-                        loop={true}
-                    >
-                        {[{ img: 'https://www.perfectiongeeks.com/image/blogslider-img2.webp' },
-                        { img: 'https://www.perfectiongeeks.com/image/blogslider-img1.webp' }]
-                            .map((item, index) => (
-                                <SwiperSlide>
-                                    <img className="w-full h-full object-cover" src={item.img} alt={`Blog${index + 1}`} />
-                                </SwiperSlide>
-                            ))}
 
-                    </Swiper>
-                </div>
+  return (
+    <div className="pt-20 max-w-6xl mx-auto px-4 pb-10 ">
+      {/* Blog Image */}
+      <div className="border-[1px] rounded-2xl p-5">
 
-                <div className="max-w-5xl mx-auto px-3">
-                    <header className="mb-12 text-center">
-                        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 uppercase">Blogs</h1>
-                        <p className="mt-4 text-md text-gray-700 max-w-2xl mx-auto font-semibold uppercase">
-                            Explore insights, tips, and updates designed to help students and recruiters get the most from GALO Score.
-                        </p>
-                    </header>
+        <img
+          src={blog[id-1].cover}
+          alt={blog[id-1].title}
+          className="md:w-1/2 w-full rounded-xl shadow-md mb-6"
+        />
 
-                    <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-4">
-                        {blog.map((post) => (
-                            <div
-                                key={post.id}
-                                className=" rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-transform transform hover:-translate-y-1 border border-yellow-300"
-                            >
-                                <img
-                                    src={post.cover}
-                                    alt={post.title}
-                                    className="w-full h-70 object-contain"
-                                />
-                                <Link to={`/blogs/${post.id}`} className="p-5 flex flex-col justify-between border-t-1">
-                                    <div>
-                                        <div className="flex items-center justify-between text-xs text-yellow-800 mb-2">
-                                            <span>{post.author}</span>
-                                            <time>{post.date}</time>
-                                        </div>
-                                        <h3 className="text-sm font-semibold text-yellow-900 leading-snug">{post.title}</h3>
-                                        <p className="mt-2 text-sm text-yellow-800 truncate">{post.content}</p>
-                                    </div>
-                                    <div className="mt-4 flex flex-wrap gap-2">
-                                        <div className="text-gray-700 font-medium bg-yellow-200 px-2 py-1 rounded-xl">
-                                            Read
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
+        {/* Title */}
+        <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
+          {blog[id-1].title}
+        </h1>
+
+        {/* Author & Date */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-gray-500 text-sm mb-6">
+          <p>
+            By <span className="font-medium text-gray-700">{blog[id-1].author}</span>
+          </p>
+          <p>{blog[id-1].date}</p>
         </div>
-    );
+
+        {/* Content */}
+        <div className="text-gray-700 leading-relaxed space-y-4 mb-8">
+          {blog[id-1].content.split("\n").map((para, index) => (
+            <p key={index}>{para.trim()}</p>
+          ))}
+        </div>
+
+      </div>
+    </div>
+  );
 };
 
-export default Blog;
-
-
+export default BlogsDetail;

@@ -19,6 +19,7 @@ import Certificate from "./pages/Certificate"
 import Blogs from "./pages/Blogs"
 import Test from "./pages/Test"
 import RecruiterLogin from "./pages/RecruiterLogin"
+import BlogsDetail from "./pages/BlogsDetail"
 
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/certificate" element={<Certificate/>}/>
         <Route path="/recruiter" element={<Corporate />} />
         <Route path="/blogs" element={<Blogs/>}/>
+        <Route path="/blogs/:id" element={<BlogsDetail/>}/>
         <Route path="/test" element={<Test/>}/>
         {/* <Route path="/practice" element={<Practice/>}/> */}
         {token ?
